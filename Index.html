@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <!-- Container -->
+  <div class="flex w-[800px] bg-white shadow-lg overflow-hidden">
+
+    <!-- Left: GoFinance -->
+    <div class="w-[500px] bg-gradient-to-b from-[#0575E6] via-[#02298A] to-[#021B79] text-white p-[50px] flex flex-col justify-center">
+      <h1 class="text-[40px] font-bold mb-[20px]">GoFinance</h1>
+      <p class="mb-[28px] text-[16px]">The most popular peer to peer lending at SEA</p>
+      <button class="bg-blue-600 hover:bg-blue-700 px-[18px] py-[10px] rounded-full w-[130px]">Read More</button>
+    </div>
+
+    <!-- Right: Login -->
+    <div class="w-[300px] p-[50px] flex flex-col justify-center">
+      <h1 class="text-[24px] font-bold mb-[10px]">Hello Again!</h1>
+      <p class="text-gray-500 mb-[28px] text-[14px]">Welcome Back</p>
+
+      <form class="space-y-[20px]">
+        <input type="email" placeholder="Email Address"
+          class="w-full px-[16px] py-[12px] border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+        <input type="password" placeholder="Password"
+          class="w-full px-[16px] py-[12px] border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+        <button type="submit"
+          class="w-full bg-blue-500 text-white py-[12px] rounded-full hover:bg-blue-600 transition">Login</button>
+      </form>
+
+      <p class="text-[12px] text-center mt-[20px] text-gray-500">
+       Forgot Password
+        <a href="#" class="hover:underline text-blue-500"></a>
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
