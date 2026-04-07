@@ -3,47 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
+  <title>Login Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+<body class="bg-[#FFFFFF]">
 
-  <div class="relative w-[800px] flex bg-white shadow-lg overflow-visible">
+  <!-- Container full màn hình, responsive -->
+  <div class="flex flex-col lg:flex-row w-full min-h-screen">
 
-  <span class="absolute -top-5 left-0 text-gray-500 text-sm font-bold opacity-50"> Register </span>
-  
+    <div class="lg:w-2/3 w-full bg-gradient-to-b from-[#0575E6] via-[#02298A] to-[#021B79] text-white flex flex-col justify-center items-start p-12 lg:p-20">
+      <h1 class="text-5xl lg:text-[80px] font-bold mb-6 lg:mb-4 lg:ml-8">GoFinance</h1>
+      <p class="text-lg lg:text-2xl mb-8 lg:mb-10 lg:ml-8 text-left">The most popular peer to peer lending at SEA</p>
 
-    <div class="w-[500px] bg-gradient-to-b from-[#0575E6] via-[#02298A] to-[#021B79] text-white p-[50px] flex flex-col justify-center">
-      <h1 class="text-[40px] font-bold mb-[20px]">GoFinance</h1>
-      <p class="mb-[28px] text-[16px]">The most popular peer to peer lending at SEA</p>
-      <button class="bg-blue-600 hover:bg-blue-700 px-[18px] py-[10px] rounded-full w-[130px]">Read More</button>
+      <button class="bg-[#0575E6] hover:bg-[#02298A] px-6 lg:px-10 py-3 lg:py-5 rounded-full text-lg lg:text-xl font-semibold transition lg:ml-8">Read More</button>
     </div>
+    <div class="lg:w-1/3 w-full bg-[#FFFFFF] flex flex-col justify-center items-start relative p-12 lg:p-20">
+  
+  <span class="absolute -top-10 lg:-top-12 left-8 lg:left-10 text-[#FFFFFF] text-lg lg:text-xl font-bold opacity-50">Register</span>
 
-    <div class="w-[300px] p-[50px] flex flex-col justify-center">
-      <h1 class="text-[24px] font-bold mb-[10px]">Hello!</h1>
-      <p class="text-gray-500 mb-[28px] text-[14px]">Sign Up to Get Started</p>
+  <h1 class="text-2xl lg:text-4xl font-bold mb-4 lg:mb-6 lg:ml-8 text-left">Hello !</h1>
 
-      <form class="space-y-[20px]">
-        <input type="Full Name" placeholder="Full Name"
-          class="w-full px-[16px] py-[12px] border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+  
+  <p class="text-[#333333] text-base lg:text-lg mb-6 lg:mb-10 lg:ml-8 text-left">Sign Up to get started</p>
 
+      <form class="space-y-6 lg:space-y-8 w-full max-w-md">
+         <input type="text" placeholder="Full Name"
+          class="w-full px-4 lg:px-6 py-3 lg:py-5 border border-[#EEEEEE] rounded-full text-base lg:text-lg focus:outline-none focus:ring-2 focus:ring-[#FFFFFF]" />
         <input type="email" placeholder="Email Address"
-          class="w-full px-[16px] py-[12px] border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          class="w-full px-4 lg:px-6 py-3 lg:py-5 border border-[#EEEEEE] rounded-full text-base lg:text-lg focus:outline-none focus:ring-2 focus:ring-[#FFFFFF]" />
 
         <input type="password" placeholder="Password"
-          class="w-full px-[16px] py-[12px] border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          class="w-full px-4 lg:px-6 py-3 lg:py-5 border border-[#EEEEEE] rounded-full text-base lg:text-lg focus:outline-none focus:ring-2 focus:ring-[#FFFFFF]" />
 
         <button type="submit"
-          class="w-full bg-blue-500 text-white py-[12px] rounded-full hover:bg-blue-600 transition">Register</button>
+          class="w-full bg-[#0575E6] text-white py-3 lg:py-5 rounded-full text-lg lg:text-xl font-semibold hover:bg- transition">Register</button>
       </form>
 
-      <p class="text-[12px] text-center mt-[20px] text-gray-500">
-       
-        
-      </p>
+      
     </div>
 
   </div>
+
+  <!-- Background image -->
+  <img src="/image/Group 2.png"
+       class="fixed bottom-0 left-0 opacity-70 w-[200px] lg:w-[400px] h-auto"
+       alt="decorative image">
 
 </body>
 </html>
